@@ -4,66 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
     <title>Cadastro</title>
 </head>
 <body>
+   
     <legend>Ficha de Cadastro</legend>
     <section>
         <fieldset class="largura-caixa">
-    <form>
+    <form id="form">
         
             <div class="campo-click">
             <label for="">Nome: </label>
-            <input type="text" placeholder="digite seu nome">
+            <input type="text" id="nome" placeholder="digite seu nome"  oninput="validateNome(this)" onchange="desativeButton()">
+            <span class="campo-verificado">O nome deve possuir no mínimo 3 caracteres</span> 
             </div> 
             
             <div class="campo-click">
             <label for="">Email:</label>
-            <input type="email" placeholder="digite seu email">
+            <input type="email" id="email" placeholder="digite seu email" oninput="validateEmail(this)" onchange="desativeButton()">
+            <span class="campo-verificado">Digite um endereço de email válido</span> 
             </div>
 
             <div class="campo-click">
             <label for="">Telefone:</label>
-            <input type="text" placeholder="digite seu telefone">           
+            <input type="text" id="telefone" placeholder="digite seu telefone"oninput="validateTelefone(this)" onchange="desativeButton()">
+            <span class="campo-verificado">Digite um telefone válido</span>            
             </div>
 
             <h1>Endereço</h1>
 
             <div class="campo-click">
                 <label for="">Rua:</label>
-                <input type="text" placeholder="digite a rua">
+                <input type="text" id="rua" placeholder="digite a rua">
             </div>  
 
             <div class="campo-click">
             <label for="">Número:</label>
-            <input type="number" placeholder="digite o número">
+            <input type="number" id="numero" placeholder="digite o número">
             </div>
             
             <div class="campo-click">
                 <label for="">Complemento:</label>
-                <input type="text" placeholder="digite o complemento">
+                <input type="text" id="complemento" placeholder="digite o complemento">
             </div>
 
             <div class="campo-click">
                 <label for="">Cidade:</label>
-                <input type="text" placeholder="digite a cidade">
+                <input type="text" id="cidade" placeholder="digite a cidade">
             </div>
 
             <div class="campo-click">
                 <label for="">Estado:</label>
-                <input type="text" placeholder="digite o UF do Estado">
+                <input type="text" id="estado" placeholder="digite o UF do Estado">
             </div>
 
             <div class="campo-click">
                 <label for="">CEP:</label>
-                <input type="number" placeholder="digite o CEP">
+                <input type="text" id="cep" placeholder="digite o CEP" oninput="validateCep(this)" onchange="desativeButton()">
+                <span class="campo-verificado">Digite um cep válido</span> 
             </div>
 
             <div class="botao-envio">
-                <button type="button">Registrar</button>
+                <button type="submit" onclick="salvar()" id="logar" disabled>Registrar</button>
             </div>
+
     </form>
      </fieldset> 
     </section>
+    
 </body>
 </html>

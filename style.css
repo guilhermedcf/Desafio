@@ -1,8 +1,8 @@
-
+ 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
 
 legend{
@@ -13,12 +13,12 @@ legend{
 }
 
 .largura-caixa{
-      max-width: 500px;
+    max-width: 500px;
     width: 50%;
     margin: 0 auto;
     padding: 30px 50px;
     border-radius: 30px;
-    background-color: gray;  
+    background-color:#645f5f;
    }   
    
 .campo-click{
@@ -36,7 +36,7 @@ h1{
 }
 
 button{
-    background-color:orange;
+    background-color:#ffa500;
     padding: 11px;
     border-radius: 15px;
     cursor: pointer;
@@ -45,6 +45,17 @@ button{
 input{
     height: 30px;
     border-radius: 20px;
+    padding: 10px;
 }
-
-
+.campo-verificado{
+    display: none;
+    font-size: #9e0101;
+    font-size: 20px;
+}
+.span-error{
+    display: block;
+    color:#9e0101;
+  }
+ button:disabled{
+    cursor:default;
+ }
