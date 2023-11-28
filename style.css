@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  
 *{
     margin: 0;
@@ -59,3 +60,55 @@ input{
  button:disabled{
     cursor:default;
  }
+=======
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+legend{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;   
+}
+
+.largura-caixa{
+      max-width: 500px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 50px;
+    border-radius: 30px;
+    background-color: gray;  
+   }   
+   
+.campo-click{
+    text-align: center;
+    margin-bottom: 18px;
+    padding: 8px;   
+}
+
+h1{
+    text-align: center;
+}
+
+.botao-envio{
+    text-align: center;
+}
+
+button{
+    background-color:orange;
+    padding: 11px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input{
+    height: 30px;
+    border-radius: 20px;
+}
+
+
+>>>>>>> f56ca8dc5e8b32a33ba1778ce14ba0315b415d94
