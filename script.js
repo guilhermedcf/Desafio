@@ -159,12 +159,12 @@ fetch(endpoint,{
   //   });
   // }
 
- function salvar(){
-  localStorage.info = document.querySelector("#nome").value;
-  localStorage.info = document.querySelector("#email").value;
+//  function salvar(){
+//   localStorage.info = document.querySelector("#nome").value;
+//   localStorage.info = document.querySelector("#email").value;
   
   
 
- }
+//  }
   
  
